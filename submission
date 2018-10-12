@@ -1,0 +1,1 @@
+kaggle competitions submit ga-customer-revenue-prediction -f submission.csv -m "first submission"

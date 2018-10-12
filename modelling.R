@@ -22,6 +22,12 @@ Sys.time()
 #categories
 
 preds <- predict(rf, test)
-tr_lvl <- lapply(train[, -which(colnames(train) == "PredictedLogRevenue")], levels)
-te_lvl <- lapply(test, levels)
-lapply(1:31, function(x) setdiff(te_lvl[[x]], tr_lvl[[x]]))
+
+submission <- data.frame(fullVisitorId = test$fullVisitorId, PredictedLogRevenue = preds)
+submission %<>% 
+  group_by(fullVisitorId) %>% 
+  summarise(PredictedLogRevenue = sum(PredictedLogRevenue))
+
+write.csv(submission, paste0(data_path, "submission.csv"), row.names = FALSE)
+
+#2 attitudes - predict every transaction and sum revenue per id or aggregate per user first
