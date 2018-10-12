@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539203198264.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3988F269",
+    "lastKnownWriteTime" : 1539328419,
+    "last_content_update" : 1539328419714,
+    "path" : "~/Documents/google_analytics/data_preparation.R",
+    "project_path" : "data_preparation.R",
+    "properties" : {
+        "cursorPosition" : "49,40",
+        "scrollLine" : "32",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
